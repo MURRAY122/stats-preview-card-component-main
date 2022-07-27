@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+body {
+  min-height: 98vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.9375rem;
+  font-family: "Inter", sans-serif;
+  background-color: hsl(233deg, 47%, 7%);
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 5rem 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: hsl(244deg, 38%, 16%);
+}
+@media (min-width: 35.5em) {
+  .section {
+    max-width: 520px;
+  }
+}
+@media (min-width: 61.25em) {
+  .section {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1080px;
+    max-height: 410px;
+  }
+}
+.section__img {
+  grid-row-end: none;
+  background: linear-gradient(hsl(277deg, 64%, 61%), hsl(277deg, 64%, 61%));
+  filter: brightness(0.8) contrast(1.5);
+}
+.section__img > picture > img {
+  opacity: 0.5;
+}
+@media (min-width: 61.25em) {
+  .section__img {
+    grid-row-end: auto;
+  }
+}
+.section__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 61.25em) {
+  .section__content {
+    justify-content: space-around;
+    padding: 2rem 7rem 2rem 4rem;
+    text-align: left;
+  }
+}
+.section__content__title {
+  font-size: 32px;
+  color: hsl(0deg, 0%, 100%);
+}
+.section__content__title > span {
+  color: hsl(277deg, 64%, 61%);
+}
+.section__content__desc {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0rem 1.6rem;
+  font-size: 0.9375rem;
+  line-height: 1.7rem;
+}
+@media (min-width: 61.25em) {
+  .section__content__desc {
+    padding: 0;
+  }
+}
+.section__content__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+@media (min-width: 61.25em) {
+  .section__content__stats {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+.section__content__stats__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.section__content__stats__number {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.section__content__stats__label {
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsla(0deg, 0%, 100%, 0.6);
+}/*# sourceMappingURL=styles.css.map */
