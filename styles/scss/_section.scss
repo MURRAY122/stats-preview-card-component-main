@@ -22,10 +22,10 @@
             $soft-violet, 
             $soft-violet
         );
-        filter: brightness(0.8) contrast(1.5);
 
         &>picture>img{
-            opacity: .5;
+            mix-blend-mode: multiply;
+            opacity: 0.8;
         }
         @include breakpoint-up(large){
             grid-row-end: auto;
