@@ -28,7 +28,6 @@ body {
   .section {
     grid-template-columns: repeat(2, 1fr);
     max-width: 1080px;
-    max-height: 410px;
   }
 }
 .section__img {
@@ -52,12 +51,13 @@ body {
 @media (min-width: 61.25em) {
   .section__content {
     justify-content: space-around;
-    padding: 2rem 7rem 2rem 4rem;
+    padding: 3rem 5rem 3rem 3rem;
     text-align: left;
   }
 }
 .section__content__title {
-  font-size: 32px;
+  margin-bottom: 0;
+  font-size: 38px;
   color: hsl(0deg, 0%, 100%);
 }
 .section__content__title > span {
@@ -72,7 +72,7 @@ body {
 }
 @media (min-width: 61.25em) {
   .section__content__desc {
-    padding: 0;
+    padding: 0 0.5rem 0 0;
   }
 }
 .section__content__stats {
@@ -86,6 +86,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
+    padding: 3rem 0rem 0rem;
   }
 }
 .section__content__stats__container {
