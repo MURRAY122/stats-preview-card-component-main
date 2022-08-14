@@ -10,15 +10,26 @@ $font-md: 0.9375rem;
 $font-family1: 'Inter', sans-serif;
 $font-family2: 'Lexend Deca', sans-serif;
  
-body{
-    min-height: 98vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+*{
+    box-sizing: border-box;
+}
 
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
     font-size: $font-md;
     font-family: $font-family1;
     background-color: $very-dark-blue;
     color: $lightly-transparent-white;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

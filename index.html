@@ -8,7 +8,7 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./styles/css/styles.css" />
 
     <title>Frontend Mentor | Stats preview card component solution</title>
   </head>
@@ -18,20 +18,20 @@
         <div class="section__content">
           <h1 class="section__content__title">Get <span>insights</span> that help your business grow.</h1>
           <p class="section__content__desc">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-          <div class="section__content__stats">
-            <div class="section__content__stats__container">
-              <div class="section__content__stats__number">10k+</div>
-              <div class="section__content__stats__label">compaines</div>
-            </div>
-            <div class="section__content__stats__container">
-              <div class="section__content__stats__number">314</div>
-              <div class="section__content__stats__label">templates</div>
-            </div>
-            <div class="section__content__stats__container">
-              <div class="section__content__stats__number">12m+</div>
-              <div class="section__content__stats__label">queries</div>
-            </div>
-          </div>
+          <ul class="section__content__stats">
+            <li class="section__content__stats__container">
+              <h2 class="section__content__stats__number">10k+</h2>
+              <p class="section__content__stats__label">compaines</p>
+            </li>
+            <li class="section__content__stats__container">
+              <h2 class="section__content__stats__number">314</h2>
+              <p class="section__content__stats__label">templates</p>
+            </li>
+            <li class="section__content__stats__container">
+              <h2 class="section__content__stats__number">12m+</h2>
+              <p class="section__content__stats__label">queries</p>
+            </li>
+          </ul>
         </div>
         <div class="section__img">
           <picture>
@@ -42,10 +42,11 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://mryanmurray.herokuapp.com/">Michael Murray</a>.
-      </div>
+    <footer class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. Coded by
+        <a href="https://www.frontendmentor.io/profile/MURRAY122" target="_blank" rel="noopener noreferrer">MURRAY122</a>.
+      </p>
     </footer>
   </body>
 </html>
