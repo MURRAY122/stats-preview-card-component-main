@@ -45,10 +45,10 @@ main {
 .section__img {
   grid-row-end: none;
   background: linear-gradient(hsl(277deg, 64%, 61%), hsl(277deg, 64%, 61%));
-  filter: brightness(0.8) contrast(1.5);
 }
 .section__img > picture > img {
-  opacity: 0.5;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
 }
 @media (min-width: 61.25em) {
   .section__img {
